@@ -4,7 +4,15 @@
 }
 
 body{
-    background-color: #030052;
+    background-color: #000000;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.container{
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 722px !important;
 }
 
 p{
@@ -18,4 +26,39 @@ svg{
 .sadbar{
     display: flex;
     flex-direction: row;
+}
+
+.ib{
+    background-color: #121212;
+    margin-bottom: 10px;
+    width: 335px;
+    height: 112px;
+}
+
+.biblioteca{
+    background-color: #121212;
+    width: 335px;
+    height: 450px;
+
+}
+
+.fy{
+    background-color: #121212;
+    width: 950px;
+    height: 570px;
+}
+
+.sb{
+    margin-right: 20px !important; 
+}
+
+.menu{
+
+}
+
+.iq{
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    font-size: 16px;
 }
