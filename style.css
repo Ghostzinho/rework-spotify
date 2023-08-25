@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +10,7 @@ body{
     box-sizing: border-box;
     margin-top: 10px;
     height: 100vh;
+    
 }
 
 .container{
@@ -18,6 +21,9 @@ body{
 
 p{
     color: #f9f9f9;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    
 }
 
 svg{
@@ -41,7 +47,7 @@ svg{
 .biblioteca{
     background-color: #121212;
     width: 324px;
-    height: 450px; 
+    height: 75vh !important;
     margin-left: 10px;
     display: flex;
     flex-direction: row;
@@ -60,6 +66,7 @@ svg{
     height: 88vh;
     border-radius: 8px;
     margin-left: 0px;
+    align-items: start;
 }
 
 .sb{
@@ -98,10 +105,15 @@ svg{
 .icons-bg1{
     display: flex;
     flex-direction: row !important;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
     width: 80px;
+}
+
+.col-iq-lupa{
+    padding-right: 18px;
 }
 
 .icons-bg2{
@@ -113,19 +125,81 @@ svg{
     width: 80px;
 }
 
+.icons-bg2>.col>p{
+    display: flex;
+    flex-direction: row !important;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 80px;
+    color: #a7a7a7 !important;
+}
+
+.icons-bg2>.col>p:hover{
+    display: flex;
+    flex-direction: row !important;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 80px;
+    color: #f9f9f9 !important;
+}
+
+.icons-bg2>span>svg:hover{
+    fill: #f9f9f9 !important;
+}
+
 .main-biblioteca{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 10px;
     padding-left: 10px;
+    height: 100;
 }
 
 .icon-bb{
-    margin-right: 10px;
     margin-top: -4px;
 }
 
 .icons-biblioteca{
     margin-top: 10px;
+}
+
+.arrows-fy{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.arrows-fy>img{
+    padding: 8px;
+}
+
+.pr-arrow:hover{
+    background-color: #0a0a0a !important;
+}
+
+.playlist{
+    display: flex;
+    text-align: center;
+}
+
+.playlist>p{
+    background-color: #1C1C1C !important;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    padding-top: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
+}
+
+.playlist>p:hover{
+    background-color: #272727 !important;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    padding-top: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
 }
