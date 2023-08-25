@@ -7,7 +7,7 @@ body{
     background-color: #000000;
     box-sizing: border-box;
     margin-top: 10px;
-    height: 100%;
+    height: 100vh;
 }
 
 .container{
@@ -33,17 +33,19 @@ svg{
     background-color: #121212;
     margin-bottom: 10px;
     width: 324px;
+    margin-left: 10px;
     height: 112px;
-    border-radius: 8px
+    border-radius: 8px;
 }
 
 .biblioteca{
     background-color: #121212;
-    width: 335px;
+    width: 324px;
     height: 450px; 
+    margin-left: 10px;
     display: flex;
     flex-direction: row;
-    border-radius: 8px
+    border-radius: 8px;
     
 
 }
@@ -56,7 +58,8 @@ svg{
     background-image: linear-gradient( rgba(42,42,42), rgba(12,12,12));
     width: 100%;
     height: 88vh;
-    border-radius: 8px
+    border-radius: 8px;
+    margin-left: 0px;
 }
 
 .sb{
@@ -96,6 +99,33 @@ svg{
     display: flex;
     flex-direction: row !important;
     padding-top: 10px;
+    padding-left: 10px;
     margin-bottom: 20px;
     width: 80px;
+}
+
+.icons-bg2{
+    display: flex;
+    flex-direction: row !important;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 80px;
+}
+
+.main-biblioteca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.icon-bb{
+    margin-right: 10px;
+    margin-top: -4px;
+}
+
+.icons-biblioteca{
+    margin-top: 10px;
 }
