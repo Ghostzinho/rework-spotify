@@ -20,7 +20,7 @@ body{
 }
 
 p{
-    color: #f9f9f9;
+    color: #a7a7a7 ;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     
@@ -202,4 +202,114 @@ svg{
     padding-left: 7px;
     padding-right: 7px;
     font-size: 15px;
+}
+
+.good-temp p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #f9f9f9;
+}
+
+.playlists-1, .playlists-2{
+    max-width: 100%;
+    height: 90px;
+}
+
+.playlists-1{
+    margin-bottom: 12px;
+}
+
+.sub-lists-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303030;
+    margin-bottom: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.sub-lists-1:hover{
+    background-color: #60605e;
+}
+
+.sub-lists-1 img{
+    width: 80px;
+    height: 90px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: -12px;
+}
+
+.sub-lists-1 p{
+    display: flex;
+    align-items: start;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #f9f9f9;
+    margin-top: 20px;
+    margin-left: -158px;
+}
+
+#id-sub-lists-1{
+    margin-right: 12px;
+}
+
+#id-sub-lists-2{
+    margin-right: 12px;
+}
+
+#id-sub-lists-4{
+    margin-right: 12px;
+}
+
+#id-sub-lists-5{
+    margin-right: 12px;
+}
+
+.sub-lists-1 .button-green{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    height: 50px;
+    background-color: #1ed760;
+    border-radius: 100%;
+}
+
+
+
+.icons-bg1:hover .iq>svg, .dini p{
+    fill: #fff;
+}
+
+.icons-bg1:hover .dini p{
+    color: #fff;
+}
+
+.icons-bg1:hover .col-iq-lupa>svg, .dbus p{
+    fill: #fff;
+}
+
+.icons-bg1:hover .dbus p{
+    color: #fff;
+}
+
+.icons-biblioteca{
+    fill: #a7a7a7;
+}
+
+.icons-biblioteca svg:hover{
+    background-color: #1C1C1C;
+
+}
+
+.icons-biblioteca{
+    height: 20px;
 }
