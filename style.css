@@ -92,6 +92,30 @@ svg{
     font-size: 16px;
 }
 
+.iq>svg{
+    fill: #a7a7a7;
+}
+
+.col-iq-lupa>svg{
+    fill: #a7a7a7;
+}
+
+/* .icons-bg2:hover span>svg{
+    fill: #fff;
+}
+
+.icons-bg2:hover .dbus p{
+    fill: #fff;
+} */
+
+.icons-bg2:hover span>svg, .dbi p{
+    fill: #fff;
+}
+
+.icons-bg2:hover .dbi p{
+    color: #fff;
+}
+
 .icons-biblioteca>svg{
     width: 40px !important;
 }
@@ -125,6 +149,7 @@ svg{
     width: 80px;
 }
 
+
 .icons-bg2>.col>p{
     display: flex;
     flex-direction: row !important;
@@ -154,10 +179,6 @@ svg{
     padding-top: 10px;
     padding-left: 10px;
     height: 100;
-}
-
-.icon-bb{
-    margin-top: -4px;
 }
 
 .icons-biblioteca{
@@ -283,6 +304,10 @@ svg{
     border-radius: 100%;
 }
 
+.button-green>svg{
+    fill: #000000 !important;
+}
+
 
 
 .icons-bg1:hover .iq>svg, .dini p{
@@ -305,11 +330,24 @@ svg{
     fill: #a7a7a7;
 }
 
-.icons-biblioteca svg:hover{
-    background-color: #1C1C1C;
+.icons-biblioteca{
+    height: 20px;
+}
+
+.mais-e-seta{
+    fill: #a7a7a7 !important;
+    margin-top: 5px;
 
 }
 
-.icons-biblioteca{
-    height: 20px;
+.teste{
+    display: flex;
+    width: 50px;
+}
+
+.teste:hover{
+    background-color: #1C1C1C;
+    border-radius: 100%;
+    width: 29px;
+    height: 29px;
 }
