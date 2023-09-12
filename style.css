@@ -75,15 +75,6 @@ svg{
     
 }
 
-@media only screen and (max-width: 1500px) {
-    .sb {
-        margin-right: 3vh !important;
-    }
-  }
-
-.menu{
-
-}
 
 .iq{
     display: flex;
@@ -122,7 +113,7 @@ svg{
 
 .icons-biblioteca{
     display: flex;
-    justify-content:flex-end
+    
 
 }
 
@@ -179,6 +170,7 @@ svg{
     padding-top: 10px;
     padding-left: 10px;
     height: 100;
+   
 }
 
 .icons-biblioteca{
@@ -246,7 +238,6 @@ svg{
 .sub-lists-1{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #303030;
     margin-bottom: 50px;
     font-family: 'Rubik', sans-serif;
@@ -257,6 +248,7 @@ svg{
 
 .sub-lists-1:hover{
     background-color: #60605e;
+    transition: 1.5s ease;
 }
 
 .sub-lists-1 img{
@@ -275,7 +267,7 @@ svg{
     font-size: 16px;
     color: #f9f9f9;
     margin-top: 20px;
-    margin-left: -158px;
+    margin-left: 15px;
 }
 
 #id-sub-lists-1{
@@ -295,6 +287,10 @@ svg{
 }
 
 .sub-lists-1 .button-green{
+    display: none;
+}
+
+.playlists-1>.sub-lists-1:hover>.button-green{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -302,10 +298,28 @@ svg{
     height: 50px;
     background-color: #1ed760;
     border-radius: 100%;
+    margin-left: 210px;
+    transition: 1.5s ease;
+}
+
+.playlists-2>.sub-lists-1:hover>.button-green{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    height: 50px;
+    background-color: #1ed760;
+    border-radius: 100%;
+    margin-left: 210px;
+    transition: 0.3s;
 }
 
 .button-green>svg{
     fill: #000000 !important;
+}
+
+.button-green{
+    box-shadow: 0px 12px 10px -12px #111;
 }
 
 
@@ -342,12 +356,23 @@ svg{
 
 .teste{
     display: flex;
-    width: 50px;
+    width: 45px;
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    margin-right: 10px;
 }
 
 .teste:hover{
     background-color: #1C1C1C;
-    border-radius: 100%;
+    border-radius: 50%;
     width: 29px;
     height: 29px;
+}
+
+.foryou{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-top: 20px;
 }
