@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 *{
     padding: 0;
@@ -10,6 +10,7 @@ body{
     box-sizing: border-box;
     margin-top: 10px;
     height: 100vh;
+    overflow-x: hidden;
     
 }
 
@@ -401,8 +402,26 @@ svg{
 }
 
 .cards{
+    width: 175px;
+    height: 223px;
     border-radius: 10px;
-    background-color: #3030302c;
+    background-color: #3030302a;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    
+}
+
+.cards:hover{
+    width: 175px;
+    height: 223px;
+    border-radius: 10px;
+    background: rgba(125, 125, 125, 0.175);
+    -webkit-transition: background 500ms linear;
+    -ms-transition: background 500ms linear;
+    transition: background 500ms linear;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    
 }
 
 .imagecards{
@@ -412,13 +431,18 @@ svg{
 }
 
 .Ttcards{
-    font-size: 10px;
-    padding-left: 24px;
-    padding-top: 6px;
+    font-size: 9px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300 !important;
+    padding-left: 17px;
+    padding-top: 7px;
+    color: #f9f9f9;
 }
 
 .Ddcards>p{
     font-size: 13px !important;
-    padding-left: 24px;
-    margin-top: 3px;
+    padding-left: 17px;
+    padding-right: 22px;
+    margin-top: 5px;
+    color: #bababa;
 }
