@@ -446,3 +446,21 @@ svg{
     margin-top: 5px;
     color: #bababa;
 }
+
+.playlist-arrow-class{
+    display: flex;
+    align-self: end;
+    margin-top: -55px;
+    margin-bottom: 12px;
+    margin-right: 25px;
+}
+
+.cards .playlist-arrow-class{
+    display: none;
+}
+
+.cards:hover .playlist-arrow-class{
+    display: flex;
+}
+
+
