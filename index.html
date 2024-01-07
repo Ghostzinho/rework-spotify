@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -10,206 +10,468 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Rework Spotify</title>
-</head>
-
-<body>
-<div class="container">
-    <!--botao home-->
-    <div class="sadbar">
+  </head>
+  <body>
+    <div class="container">
+      <!--botao home-->
+      <div class="sadbar">
         <div class="container text-center sb">
-            <div class="col row-cols-2 ">
+          <div class="col row-cols-2 ">
             <div class="ib">
-                <div class="icons-bg1">
-                    <div class="col iq"><svg width="20px" fill="#a7a7a7" viewBox="0 1 511 511.999" width="511pt" xmlns="http://www.w3.org/2000/svg" id="fi_1946488"><path d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0"></path></svg></div>
-                    <div class="col dini"><p>Início</p></div>
+              <div class="icons-bg1">
+                <div class="col iq">
+                  <svg width="20px" fill="#a7a7a7" viewBox="0 1 511 511.999" width="511pt" xmlns="http://www.w3.org/2000/svg" id="fi_1946488">
+                    <path d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0"></path>
+                  </svg>
                 </div>
-                <div class="icons-bg1">
-                    <div class="col-iq-lupa"><svg width="20px" fill="#a7a7a7" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" id="fi_118177"><g><path d="m495,466.1l-110.1-110.1c31.1-37.7 48-84.6 48-134 0-56.4-21.9-109.3-61.8-149.2-39.8-39.9-92.8-61.8-149.1-61.8-56.3,0-109.3,21.9-149.2,61.8-39.9,39.8-61.8,92.8-61.8,149.2 0,56.3 21.9,109.3 61.8,149.2 39.8,39.8 92.8,61.8 149.2,61.8 49.5,0 96.4-16.9 134-48l110.1,110c8,8 20.9,8 28.9,0 8-8 8-20.9 0-28.9zm-393.3-123.9c-32.2-32.1-49.9-74.8-49.9-120.2 0-45.4 17.7-88.2 49.8-120.3 32.1-32.1 74.8-49.8 120.3-49.8 45.4,0 88.2,17.7 120.3,49.8 32.1,32.1 49.8,74.8 49.8,120.3 0,45.4-17.7,88.2-49.8,120.3-32.1,32.1-74.9,49.8-120.3,49.8-45.4,0-88.1-17.7-120.2-49.9z"></path></g></svg></div>
-                    <div class="col dbus"><p>Buscar</p></div>
+                <div class="col dini">
+                  <p>Início</p>
                 </div>
+              </div>
+              <div class="icons-bg1">
+                <div class="col-iq-lupa">
+                  <svg width="20px" fill="#a7a7a7" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" id="fi_118177">
+                    <g>
+                      <path d="m495,466.1l-110.1-110.1c31.1-37.7 48-84.6 48-134 0-56.4-21.9-109.3-61.8-149.2-39.8-39.9-92.8-61.8-149.1-61.8-56.3,0-109.3,21.9-149.2,61.8-39.9,39.8-61.8,92.8-61.8,149.2 0,56.3 21.9,109.3 61.8,149.2 39.8,39.8 92.8,61.8 149.2,61.8 49.5,0 96.4-16.9 134-48l110.1,110c8,8 20.9,8 28.9,0 8-8 8-20.9 0-28.9zm-393.3-123.9c-32.2-32.1-49.9-74.8-49.9-120.2 0-45.4 17.7-88.2 49.8-120.3 32.1-32.1 74.8-49.8 120.3-49.8 45.4,0 88.2,17.7 120.3,49.8 32.1,32.1 49.8,74.8 49.8,120.3 0,45.4-17.7,88.2-49.8,120.3-32.1,32.1-74.9,49.8-120.3,49.8-45.4,0-88.1-17.7-120.2-49.9z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="col dbus">
+                  <p>Buscar</p>
+                </div>
+              </div>
             </div>
-            </div>    
-    <!-- search -->
-            <div class="col row biblioteca">
-                <div class="main-biblioteca">
-                    <div class="icons-bg2">
-                        <img src="imagens/books.svg" alt="">
-                        <div class="col dbi"><p>Biblioteca</p></div>
-                    </div>
-                    <div class="icons-biblioteca">
-                        <div class="teste">
-                            <svg class="mais-e-seta" height="20" width="512" viewBox="0 0 32 32" fill="#f9f9f9" xmlns="http://www.w3.org/2000/svg" id="fi_2952040"><g id="add,-cross,-plus,-sign"><path id="Path" d="m17 4v11h11v2h-11v11h-2v-11h-11v-2h11v-11z"></path></g></svg>  
-                        </div>
-                        <div class="teste">
-                            <svg class="mais-e-seta" height="20" width="512" viewBox="0 0 512 512" fill="#f9f9f9" version="1.1" id="fi_545682" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><g><g><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg>
-                        </div>
-                        <!-- mais icon -->
-                        <!-- <svg class="mais-e-seta" height="20" width="512" viewBox="0 0 32 32" fill="#f9f9f9" xmlns="http://www.w3.org/2000/svg" id="fi_2952040"><g id="add,-cross,-plus,-sign"><path id="Path" d="m17 4v11h11v2h-11v11h-2v-11h-11v-2h11v-11z"></path></g></svg> -->
-                        <!-- arrow depois do icon de + -->
-                        <!-- <svg class="mais-e-seta" height="20" width="512" viewBox="0 0 512 512" fill="#f9f9f9" version="1.1" id="fi_545682" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><g><g><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg> -->
-                    </div>
+          </div>
+          <!-- search -->
+          <div class="col row biblioteca">
+            <div class="main-biblioteca">
+              <div class="icons-bg2">
+                <img src="imagens/books.svg" alt="">
+                <div class="col dbi">
+                  <p>Biblioteca</p>
                 </div>
-                <div class="playlist"><p>Playlists</p></div>
+              </div>
+              <div class="icons-biblioteca">
+                <div class="teste">
+                  <svg class="mais-e-seta" height="20" width="512" viewBox="0 0 32 32" fill="#f9f9f9" xmlns="http://www.w3.org/2000/svg" id="fi_2952040">
+                    <g id="add,-cross,-plus,-sign">
+                      <path id="Path" d="m17 4v11h11v2h-11v11h-2v-11h-11v-2h11v-11z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="teste">
+                  <svg class="mais-e-seta" height="20" width="512" viewBox="0 0 512 512" fill="#f9f9f9" version="1.1" id="fi_545682" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                    <g>
+                    <g>
+                    <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+                  </svg>
+                </div>
+              </div>
             </div>
+            <div class="playlist">
+              <p>Playlists</p>
+            </div>
+          </div>
         </div>
-
-
-    <!--For you-->
+        <!--For you-->
         <div class="container text-center">
-            <div class="row fy">
-                <div class="arrows-fy">
-                    <img class="pr-arrow" src="imagens/arrow-fy.png" alt="arrow" style="width: 15px; background-color: #0e0e0eab; border-radius: 100%; padding-right: 8px;">
-                    <img class="pr-arrow" src="imagens/arrow-fy.png" alt="arrow" style="-webkit-transform: scaleX(-1); transform: scaleX(-1); width: 15px; background-color: #0e0e0eab; border-radius: 100%; padding-right: 8px;">
-                    <div class="good-temp">
-                        <p>Boa Noite</p>
-                        <div>
-                            <div class="row playlists-1">
-                                <div class="col sub-lists-1" id="id-sub-lists-1">
-                                    <img src="imagens/capa-das-playlists.jpg" alt="img-play">
-                                    <p>Playlist Pwm's</p>
-                                    <div class="button-green"><svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></div>
-                                </div>
-                                <div class="col sub-lists-1" id="id-sub-lists-2">
-                                    <img src="imagens/capa-das-playlists.jpg" alt="img-play">
-                                    <p>Playlist Pwm's</p>
-                                    <div class="button-green"><svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></div>
-                                </div>
-                                <div class="col sub-lists-1" id="id-sub-lists-3">
-                                    <img src="imagens/capa-das-playlists.jpg" alt="img-play">
-                                    <p>Playlist Pwm's</p>
-                                    <div class="button-green"><svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 fill:#000000 viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></div>
-                                </div>
-                            </div>
-                            <div class="row playlists-2">
-                                <div class="col sub-lists-1" id="id-sub-lists-4">
-                                    <img src="imagens/capa-das-playlists.jpg" alt="img-play">
-                                    <p>Playlist Pwm's</p>
-                                    <div class="button-green"><svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></div>
-                                </div>
-                                <div class="col sub-lists-1" id="id-sub-lists-5">
-                                    <img src="imagens/capa-das-playlists.jpg" alt="img-play">
-                                    <p>Playlist Pwm's</p>
-                                    <div class="button-green"><svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></div>
-                                </div>
-                                <div class="col sub-lists-1" id="id-sub-lists-6">
-                                    <img src="imagens/capa-das-playlists.jpg" alt="img-play">
-                                    <p>Playlist Pwm's</p>
-                                    <div class="button-green"><svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="foryou">
-                            <p id="makefor">Feito para Ghostzin🥷🏻🧼</p> <p id="showall">Mostrar tudo</p>
-                        </div>
-                        <div class="container text-center">
-                            <div class="row">
-                            <div class="col">
-                                <div class="cards">
-                                    <div class="imagecards"><img src="imagens/imgcardsplaylist.png" alt="img-play">
-                                        <div class="playlist-arrow-class">
-                                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
-                                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Ttcards"><h1>Daily Mix 1</h1></div>
-                                    <div class="Ddcards"><p>Drake, Lil Baby, Wiz Khalifa e mais</p></div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="cards">
-                                    <div class="imagecards"><img src="imagens/imgcardsplaylist.png" alt="img-play">
-                                        <div class="playlist-arrow-class">
-                                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
-                                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Ttcards"><h1>Daily Mix 1</h1></div>
-                                    <div class="Ddcards"><p>Drake, Lil Baby, Wiz Khalifa e mais</p></div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="cards">
-                                    <div class="imagecards"><img src="imagens/imgcardsplaylist.png" alt="img-play">
-                                        <div class="playlist-arrow-class">
-                                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
-                                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Ttcards"><h1>Daily Mix 1</h1></div>
-                                    <div class="Ddcards"><p>Drake, Lil Baby, Wiz Khalifa e mais</p></div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="cards">
-                                    <div class="imagecards"><img src="imagens/imgcardsplaylist.png" alt="img-play">
-                                        <div class="playlist-arrow-class">
-                                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
-                                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Ttcards"><h1>Daily Mix 1</h1></div>
-                                    <div class="Ddcards"><p>Drake, Lil Baby, Wiz Khalifa e mais</p></div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="cards">
-                                    <div class="imagecards"><img src="imagens/imgcardsplaylist.png" alt="img-play">
-                                        <div class="playlist-arrow-class">
-                                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
-                                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Ttcards"><h1>Daily Mix 1</h1></div>
-                                    <div class="Ddcards"><p>Drake, Lil Baby, Wiz Khalifa e mais</p></div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="cards">
-                                    <div class="imagecards"><img src="imagens/imgcardsplaylist.png" alt="img-play">
-                                        <div class="playlist-arrow-class">
-                                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
-                                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Ttcards"><h1>Daily Mix 1</h1></div>
-                                    <div class="Ddcards"><p>Drake, Lil Baby, Wiz Khalifa e mais</p></div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="cards">
-                                    <div class="imagecards"><img src="imagens/imgcardsplaylist.png" alt="img-play">
-                                        <div class="playlist-arrow-class">
-                                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
-                                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Ttcards"><h1>Daily Mix 1</h1></div>
-                                    <div class="Ddcards"><p>Drake, Lil Baby, Wiz Khalifa e mais</p></div>
-                                </div>
-                            </div>
-                        </div>
+          <div class="row fy">
+            <div class="arrows-fy">
+              <img class="pr-arrow" src="imagens/arrow-fy.png" alt="arrow" style="width: 15px; background-color: #0e0e0eab; border-radius: 100%; padding-right: 8px;">
+              <img class="pr-arrow" src="imagens/arrow-fy.png" alt="arrow" style="-webkit-transform: scaleX(-1); transform: scaleX(-1); width: 15px; background-color: #0e0e0eab; border-radius: 100%; padding-right: 8px;">
+              <div class="good-temp">
+                <p>Boa Noite</p>
+                <div>
+                  <div class="row playlists-1">
+                    <div class="col sub-lists-1" id="id-sub-lists-1">
+                      <img src="imagens/capa-das-playlists.jpg" alt="img-play">
+                      <p>Playlist Pwm's</p>
+                      <div class="button-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512">
+                          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                        </svg>
+                      </div>
                     </div>
+                    <div class="col sub-lists-1" id="id-sub-lists-2">
+                      <img src="imagens/capa-das-playlists.jpg" alt="img-play">
+                      <p>Playlist Pwm's</p>
+                      <div class="button-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512">
+                          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="col sub-lists-1" id="id-sub-lists-3">
+                      <img src="imagens/capa-das-playlists.jpg" alt="img-play">
+                      <p>Playlist Pwm's</p>
+                      <div class="button-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 fill:#000000 viewBox="0 0 384 512">
+                          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row playlists-2">
+                    <div class="col sub-lists-1" id="id-sub-lists-4">
+                      <img src="imagens/capa-das-playlists.jpg" alt="img-play">
+                      <p>Playlist Pwm's</p>
+                      <div class="button-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512">
+                          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="col sub-lists-1" id="id-sub-lists-5">
+                      <img src="imagens/capa-das-playlists.jpg" alt="img-play">
+                      <p>Playlist Pwm's</p>
+                      <div class="button-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512">
+                          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="col sub-lists-1" id="id-sub-lists-6">
+                      <img src="imagens/capa-das-playlists.jpg" alt="img-play">
+                      <p>Playlist Pwm's</p>
+                      <div class="button-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" fill:#000000 viewBox="0 0 384 512">
+                          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="foryou">
+                  <p id="makefor">Feito para Ghostzin🥷🏻🧼</p>
+                  <p id="showall">Mostrar tudo</p>
+                </div>
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="cards">
+                        <div class="imagecards">
+                          <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                          <div class="playlist-arrow-class">
+                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                              <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Ttcards">
+                          <h1>Daily Mix 1</h1>
+                        </div>
+                        <div class="Ddcards">
+                          <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="cards">
+                        <div class="imagecards">
+                          <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                          <div class="playlist-arrow-class">
+                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                              <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Ttcards">
+                          <h1>Daily Mix 1</h1>
+                        </div>
+                        <div class="Ddcards">
+                          <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="cards">
+                        <div class="imagecards">
+                          <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                          <div class="playlist-arrow-class">
+                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                              <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Ttcards">
+                          <h1>Daily Mix 1</h1>
+                        </div>
+                        <div class="Ddcards">
+                          <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="cards">
+                        <div class="imagecards">
+                          <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                          <div class="playlist-arrow-class">
+                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                              <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Ttcards">
+                          <h1>Daily Mix 1</h1>
+                        </div>
+                        <div class="Ddcards">
+                          <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="cards">
+                        <div class="imagecards">
+                          <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                          <div class="playlist-arrow-class">
+                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                              <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Ttcards">
+                          <h1>Daily Mix 1</h1>
+                        </div>
+                        <div class="Ddcards">
+                          <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="cards">
+                        <div class="imagecards">
+                          <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                          <div class="playlist-arrow-class">
+                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                              <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Ttcards">
+                          <h1>Daily Mix 1</h1>
+                        </div>
+                        <div class="Ddcards">
+                          <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="cards">
+                        <div class="imagecards">
+                          <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                          <div class="playlist-arrow-class">
+                            <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                              <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Ttcards">
+                          <h1>Daily Mix 1</h1>
+                        </div>
+                        <div class="Ddcards">
+                          <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="foryou line2">
+                    <p id="makefor">Feito para Ghostzin🥷🏻🧼</p>
+                    <p id="showall">Mostrar tudo</p>
+                  </div>
+                  <div class="container text-center playlist2">
+                    <div class="row">
+                      <div class="col">
+                        <div class="cards">
+                          <div class="imagecards">
+                            <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                            <div class="playlist-arrow-class">
+                              <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="Ttcards">
+                            <h1>Daily Mix 1</h1>
+                          </div>
+                          <div class="Ddcards">
+                            <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="cards">
+                          <div class="imagecards">
+                            <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                            <div class="playlist-arrow-class">
+                              <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="Ttcards">
+                            <h1>Daily Mix 1</h1>
+                          </div>
+                          <div class="Ddcards">
+                            <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="cards">
+                          <div class="imagecards">
+                            <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                            <div class="playlist-arrow-class">
+                              <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="Ttcards">
+                            <h1>Daily Mix 1</h1>
+                          </div>
+                          <div class="Ddcards">
+                            <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="cards">
+                          <div class="imagecards">
+                            <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                            <div class="playlist-arrow-class">
+                              <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="Ttcards">
+                            <h1>Daily Mix 1</h1>
+                          </div>
+                          <div class="Ddcards">
+                            <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="cards">
+                          <div class="imagecards">
+                            <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                            <div class="playlist-arrow-class">
+                              <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="Ttcards">
+                            <h1>Daily Mix 1</h1>
+                          </div>
+                          <div class="Ddcards">
+                            <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="cards">
+                          <div class="imagecards">
+                            <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                            <div class="playlist-arrow-class">
+                              <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="Ttcards">
+                            <h1>Daily Mix 1</h1>
+                          </div>
+                          <div class="Ddcards">
+                            <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="cards">
+                          <div class="imagecards">
+                            <img src="imagens/imgcardsplaylist.png" alt="img-play">
+                            <div class="playlist-arrow-class">
+                              <div id="playlist-arrow-id" style="width: 43px; height: 43px; background-color: #1fdf65c2; border-radius: 100%;">
+                                <img class="playlist-arrow" src="imagens/arrow-player-music.png" alt="arrow" width="20px" height="80px" style="max-height: 20px; margin-top: 11px; margin-left: 13px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="Ttcards">
+                            <h1>Daily Mix 1</h1>
+                          </div>
+                          <div class="Ddcards">
+                            <p>Drake, Lil Baby, Wiz Khalifa e mais</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Time to Music-->
+      <div class="container soundtime">
+        <div class="row">
+            <div class="col-sm">
+                One of three columns
+            </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container d-flex row soundtime">
+        <div class="row">
+          <div class="col" style="background-color: rgb(20, 31, 31);">
+            <div class="col-sm album-cover">
+                <img src="" alt="imgalbumcover">
+                <div class="tdalbum">
+                    <h1>We Don't Go Out To Nightclubs Anymore</h1>
+                </div>
+                <div class="col-sm Ddalbum">
+                    <p>Wiz Khalifa</p>
+                </div>
+                <div class="like-msc-icon">
+                    <p>teste</p>
                 </div>
             </div>
+            <div class="col-sm times">
+                <div class="times-icon">
+                    <p>teste</p>
+                </div>
+                <div class="time-counter">
+                    <p>teste</p>
+                </div>
+            </div>
+            <div class="col-sm gadgets">
+                <div class="gadgets-icons">
+                    <p>teste</p>
+                </div>
+            </div>
+          </div>
         </div>
-    </div>   
-</div>
-
-
-    <!--Time to Music-->
-    <div class="container d-flex justify-content-center">
-        <div class="row">
-                <div class="col" style="background-color: rgb(20, 31, 31);"><p>teste 1</p></div>
-        </div>
-    </div>    
-</div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
-
