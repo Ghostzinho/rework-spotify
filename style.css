@@ -535,5 +535,40 @@ svg{
     padding-top: 10px;
 }
 
+.time-counter{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#time-music{
+    border-radius: 7px;
+    width: 80%;
+    height: 5px;
+}
+
+#point-music{
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 10px rgb(0, 0, 0);
+}
+
+progress::-webkit-progress-bar{
+    background-color: #767676e9;
+    border-radius: 7px;
+}
+
+progress::-webkit-progress-value{
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+progress::-webkit-progress-value:hover{
+    background-color: #1ed760;
+    border-radius: 7px;
+}
+
 
 
